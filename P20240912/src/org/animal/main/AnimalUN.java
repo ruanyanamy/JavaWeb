@@ -25,6 +25,9 @@ public class AnimalUN {
 		//上台發言(c);
 		//雙邊會談(c, d);
 		多邊會談(c,d,a);
+		Pet.foo();
+		d.bar();
+		d.baz();
 	}
 	
 	//以下三個方法都具有擴充性
