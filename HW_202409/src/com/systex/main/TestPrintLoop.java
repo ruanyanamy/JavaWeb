@@ -4,9 +4,11 @@ public class TestPrintLoop {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int len = Integer.parseInt(args[0]);
+		
 		//Loop 1
 		System.out.println("Loop 1");
-		for (int i=0;i<5;i++) {
+		for (int i=0;i<len;i++) {
 			for (int j=0;j<=i;j++) {
 				System.out.print("*");
 			}
@@ -15,8 +17,8 @@ public class TestPrintLoop {
 		
 		//Loop 2
 		System.out.println("Loop 2");
-		for (int i=0;i<5;i++) {
-			for (int j=5-i;j>0;j--) {
+		for (int i=0;i<len;i++) {
+			for (int j=len-i;j>0;j--) {
 				System.out.print("*");
 			}
 			System.out.println();
@@ -24,8 +26,8 @@ public class TestPrintLoop {
 		
 		//Loop 3
 		System.out.println("Loop 3");
-		for (int i=5;i>0;i--) {
-			for (int j=1;j<=5;j++) {
+		for (int i=len;i>0;i--) {
+			for (int j=1;j<=len;j++) {
 				if (j >= i) {
 					System.out.print("*");
 				}else {
@@ -38,8 +40,8 @@ public class TestPrintLoop {
 		//Loop 4
 		System.out.println("Loop 4");
 		int l1 = 0;
-		for (int i=0;i<5;i++) {          
-			for (int j=i;j<5;j++) {     
+		for (int i=0;i<len;i++) {          
+			for (int j=i+1;j<len;j++) {     
 				System.out.print(" ");
 			}
 			for (int k=0;k<=l1;k++) {    
@@ -51,11 +53,11 @@ public class TestPrintLoop {
 		
 		//Loop 5
 		System.out.println("Loop 5");
-		for (int i=0;i<5;i++) {
+		for (int i=0;i<len;i++) {
 			for (int k=0;k<i;k++) {
 				System.out.print(" ");
 			}
-			for (int j=5-i;j>0;j--) {
+			for (int j=len-i;j>0;j--) {
 				System.out.print("*");
 			}
 			System.out.println();
@@ -63,8 +65,8 @@ public class TestPrintLoop {
 		
 		//Loop 6
 		System.out.println("Loop 6");
-		int l2 = 9;
-		for (int i=0;i<5;i++) {
+		int l2 = 2*len-1;
+		for (int i=0;i<len;i++) {
 			for (int k=0;k<i;k++) {
 				System.out.print(" ");
 			}
@@ -77,9 +79,9 @@ public class TestPrintLoop {
 		
 		//Loop 7
 		System.out.println("Loop 7");
-		int l3 = 0 , l4 = 9;
-		for (int i=0;i<4;i++) {          
-			for (int j=i;j<4;j++) {     
+		int l3 = 0 , l4 = 2*len-1;
+		for (int i=0;i<len-1;i++) {          
+			for (int j=i;j<len-1;j++) {     
 				System.out.print(" ");
 			}
 			for (int k=0;k<=l3;k++) {    
@@ -88,7 +90,7 @@ public class TestPrintLoop {
 			l3 += 2;
 			System.out.println();
 		}
-		for (int i=0;i<5;i++) {
+		for (int i=0;i<len;i++) {
 			for (int k=0;k<i;k++) {
 				System.out.print(" ");
 			}

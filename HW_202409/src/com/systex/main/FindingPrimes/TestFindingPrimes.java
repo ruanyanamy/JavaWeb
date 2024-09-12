@@ -7,15 +7,15 @@ public class TestFindingPrimes {
 		int n = Integer.parseInt(args[0]);
 		
 		for (int i=2;i<=n;i++) {
-			boolean isPrime = true;
+			boolean x = true;
 			for (int j=2;j<i;j++) {
 				if (i%j==0) {
-					isPrime = false;
+					x = false;
 					break;
 				}
 			}
-			if(isPrime) {
-				System.out.print(i+" ");
+			if(x) {
+				System.out.println(i);
 			}
 		}
 	}

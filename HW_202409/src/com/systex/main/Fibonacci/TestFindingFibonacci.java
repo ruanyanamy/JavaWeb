@@ -8,7 +8,7 @@ public class TestFindingFibonacci {
 		int n1 = 0 , n2 = 1;
 		System.out.print(n1+","+n2);
 		
-		//0,1,1,2,3,5,8,13,21
+		//0,1,1,2,3,5,8,13,21...
 		for (int i=1;i<n;i++) {
 			if (i == n1+n2) {
 				System.out.print(","+i);
