@@ -15,6 +15,16 @@ public class TestString {
 		System.out.println(c.equals(d));
 		System.out.println(a.equals(c));
 		System.out.println(b.equals(d));
+		System.out.println("==================");
+		StringBuilder sb = new StringBuilder("Hello");   //StringBuffer和StringBuilder的API完全一樣
+		System.out.println(sb);
+		System.out.println(sb.capacity());
+		sb.append(" World");
+		System.out.println(sb);
+		sb.append("How are you?");
+		System.out.println(sb.capacity());
+		sb.reverse();
+		System.out.println(sb);
 	}
 
 }
