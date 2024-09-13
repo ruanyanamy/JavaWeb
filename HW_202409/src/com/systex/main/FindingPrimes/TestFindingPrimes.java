@@ -5,6 +5,7 @@ public class TestFindingPrimes {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int n = Integer.parseInt(args[0]);
+		int count = 0;
 		
 		for (int i=2;i<=n;i++) {
 			boolean x = true;
@@ -15,9 +16,11 @@ public class TestFindingPrimes {
 				}
 			}
 			if(x) {
+				count += 1;
 				System.out.println(i);
 			}
 		}
+		System.out.println("小於"+n+"的質數有"+count+"個");
 	}
 
 }
