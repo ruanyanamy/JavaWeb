@@ -6,7 +6,7 @@
     
 >  java -cp HW_202409_02-0.0.1-SNAPSHOT.jar com.systex.main.Sorting true
   
-  #### 功課第一題(Lottery.java):
+  #### 功課第二題(Lottery.java):
 - 傳入參數 : 1. 要選的樂透組數/2. 不需要包含在樂透裡的號碼<br>
 -> 1. ex: 2<br>
 -> 2. ex: "12 14 2 36 41 10"
