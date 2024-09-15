@@ -1,9 +1,9 @@
 package com.systex.main;
 
-import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Lottery {
 
@@ -11,8 +11,8 @@ public class Lottery {
 		// TODO Auto-generated method stub
 		int group = Integer.parseInt(args[0]);
 		String[] temp = args[1].split(" ");
-		List<Integer> notpickNumber = new ArrayList<>();
-		Set<Integer> pickNumberGroup = new HashSet<>();
+		Set<Integer> notpickNumber = new TreeSet<>();
+		Set<Integer> pickNumberGroup = new TreeSet<>();
 		int num;
 
 		for (String x : temp) {
