@@ -16,5 +16,6 @@
 	<p><a href="admin/Dump.view">Hello Dump</a></p>
 	<p><a href="admin/dump.jsp">Dump JSP</a></p>
 	<p><a href="customer/createCustomer.jsp">Create Customer</a></p>
+	<p><a href="customer/createCustomer1.jsp">測試交談時期</a></p>
 </body>
 </html>

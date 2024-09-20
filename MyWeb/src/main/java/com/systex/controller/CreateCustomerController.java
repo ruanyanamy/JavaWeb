@@ -88,6 +88,7 @@ public class CreateCustomerController extends HttpServlet {
 			cust.setHabits(habits);
 			
 			request.setAttribute("cust", cust);  //Request-Scope
+			
 			view = request.getRequestDispatcher("createSuccessful.jsp"); //成功->導到下一頁
 			view.forward(request, response);
 			
